@@ -29,6 +29,19 @@
             margin-top: 50px;
             outline: 5px solid black;
         }
+        .container1
+        {
+            position: relative;
+            width: 1200px;
+            height: 480px;
+            margin: auto auto auto auto;
+        }
+        .container-wrapper
+        {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
     </style>
 
     <body>
@@ -41,7 +54,15 @@
                 sound.play();
             });
         </script>
-        <input type="text" id="fname" name="fname" style="height:200px;font-size:14pt;" placeholder="hey sawyer"><br><br>
+        <div class="container1">
+            <div class="container-wrapper">
+                <input type="text" id="fname" name="fname" style="height:200px;font-size:14pt;" placeholder="hey sawyer"><br><br>
+                <video width="1400" height="600" controls>
+                    <source src="Spheal Spin.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
         <img src="hhhhhhhhhh.jpg" alt="funny meme!" width="400" height="400">
         <audio id="sound1" src="fart1.wav"></audio>
         <audio id="sound2" src="fart2.wav"></audio>
