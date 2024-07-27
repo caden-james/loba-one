@@ -1,4 +1,4 @@
-<HTML>
+<HTML lang="em">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,9 +35,19 @@
         <h1>ARGAGRGARGARG</h1>
         <p class="funnyfont">what up!!</p>
         <script>
+            document.addEventListener("click", function() {
+                var a = Math.ceil(Math.random()*5);
+                var sound = document.getElementById("sound"+a);
+                sound.play();
+            });
         </script>
-        <audio src="von dutch.mp3" autoplay></audio>
-        <input type="text" id="fname" name="fname" style="height:200px;font-size:14pt;" placeholder="THIS IS LOBA!!"><br><br>
+        <input type="text" id="fname" name="fname" style="height:200px;font-size:14pt;" placeholder="hey sawyer"><br><br>
         <img src="hhhhhhhhhh.jpg" alt="funny meme!" width="400" height="400">
+        <audio id="sound1" src="fart1.wav"></audio>
+        <audio id="sound2" src="fart2.wav"></audio>
+        <audio id="sound3" src="fart3.wav"></audio>
+        <audio id="sound4" src="fart4.mp3"></audio>
+        <audio id="sound5" src="fart5.mp3"></audio>
+        <audio id="sound6" src="fart6.mp3"></audio>
     </body>
 <HTML>
